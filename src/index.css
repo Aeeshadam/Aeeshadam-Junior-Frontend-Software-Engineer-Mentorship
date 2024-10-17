@@ -3,6 +3,8 @@
   --primary-color: rgb(91, 2, 2);
   --secondary-color: rgb(19, 19, 19);
   --border-color: rgb(220, 220, 220);
+  --small-gap: 2rem;
+  --big-gap: 10rem;
   --spacing: 2rem;
 }
 * {

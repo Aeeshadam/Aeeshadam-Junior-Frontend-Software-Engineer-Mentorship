@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      <header className={styles.heroHeader}>
+      <header>
         <h1>Random Page - See all sort of things</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
@@ -16,8 +16,8 @@ const Hero = () => {
           <a href="/about">Learn More</a>
         </button>
       </header>
-      <figure className={styles.heroImage}>
-        <img src="/hero.jpg" alt="hero-image" />
+      <figure>
+        <img className={styles.heroImage} src="/hero.jpg" alt="hero-image" />
       </figure>
     </section>
   );
