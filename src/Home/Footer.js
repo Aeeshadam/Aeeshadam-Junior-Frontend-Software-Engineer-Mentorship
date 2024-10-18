@@ -7,15 +7,13 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerColumns}>
         {footerLinks.map((category) => (
-          <div key={category.title} className={styles.footerColumn}>
-            <ul className={styles.footerLinks}>
-              {category.links.map((link) => (
-                <li key={link.title}>
-                  <a href={link.url}>{link.title}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <ul className={styles.footerLinks} key={category.title}>
+            {category.links.map((link) => (
+              <li key={link.title}>
+                <a href={link.url}>{link.title}</a>
+              </li>
+            ))}
+          </ul>
         ))}
       </div>
       <p>

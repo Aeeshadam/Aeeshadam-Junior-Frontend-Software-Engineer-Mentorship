@@ -6,7 +6,7 @@ const Hero = () => {
     <section className={styles.hero}>
       <header>
         <h1>Random Page - See all sort of things</h1>
-        <p>
+        <p aria-label="header description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
           blanditiis nesciunt ad ratione reiciendis. Reprehenderit et cum atque
           at aperiam nesciunt, beatae voluptatem laudantium eveniet odit fuga
