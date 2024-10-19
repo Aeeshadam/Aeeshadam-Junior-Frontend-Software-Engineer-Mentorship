@@ -3,9 +3,9 @@
   --primary-color: rgb(91, 2, 2);
   --secondary-color: rgb(19, 19, 19);
   --border-color: rgb(220, 220, 220);
-  --small-gap: 2rem;
-  --big-gap: 10rem;
-  --spacing: 2rem;
+  --spacing-1: 1rem;
+  --spacing-2: 2rem;
+  --spacing-10: 10rem;
 }
 * {
   margin: 0;
@@ -30,14 +30,14 @@ h1 {
   font-weight: 700;
   color: var(--primary-color);
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-1);
 }
 
 h2 {
   font-size: 3.5rem;
   font-weight: 500;
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-1);
 }
 
 button {
