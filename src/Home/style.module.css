@@ -1,5 +1,7 @@
 .container {
-  margin: 0 10rem;
+  padding: 0 var(--spacing-10);
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .nav {
@@ -12,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: var(--spacing-2);
   list-style: none;
 }
 
@@ -21,8 +23,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 10rem 0;
-  gap: 10rem;
+  margin: var(--spacing-10) 0;
+  gap: var(--spacing-10);
 }
 
 .heroHeader {
@@ -30,7 +32,7 @@
 }
 
 .hero p {
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-2);
   color: var(--grey-color);
   font-size: 1.5rem;
 }
@@ -47,26 +49,26 @@
 
 .serviceContainer {
   width: 100%;
-  margin: 10rem 0;
+  margin: var(--spacing-10) 0;
 }
 
 .cardContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: var(--spacing-2);
   width: 100%;
   margin: 5rem 0;
 }
 
 .card {
-  padding: 1rem;
+  padding: var(--spacing-1);
   border: 1px solid var(--border-color);
-  border-radius: 1rem;
+  border-radius: var(--spacing-1);
 }
 
 .cardTitle {
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-1);
 }
 
 .card img {
@@ -74,12 +76,12 @@
   max-width: 500px;
   height: auto;
   object-fit: cover;
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-2);
 }
 
 .footer {
   text-align: left;
-  padding: 2rem 0;
+  padding: var(--spacing-2) 0;
   border-top: 1px solid var(--border-color);
 }
 
@@ -87,7 +89,7 @@
   display: flex;
   justify-content: space-between;
   width: 70%;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-1);
 }
 
 .footerLinks {
