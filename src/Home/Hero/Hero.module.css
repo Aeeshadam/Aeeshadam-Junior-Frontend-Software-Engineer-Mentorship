@@ -1,0 +1,29 @@
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: var(--spacing-5);
+  width: 100%;
+  margin: 16rem auto var(--spacing-5) auto;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    max-width: 460px;
+    margin: 12rem auto var(--spacing-5) auto;
+    gap: var(--spacing-3);
+  }
+}
+
+.hero p {
+  margin-bottom: var(--spacing-1);
+  color: var(--grey-color);
+  font-size: 1.5rem;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
