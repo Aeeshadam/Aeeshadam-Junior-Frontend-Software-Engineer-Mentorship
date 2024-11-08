@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Navbar.module.css";
+import styles from "./style.module.css";
 import { links } from "../../constants";
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className={styles.nav}>
-      <div className={styles.LogoAndMenuContainer}>
+      <div className={styles.logoAndMenuContainer}>
         <a className={styles.logo} href="/" aria-label="Logo">
           <img src="/logo.png" alt="Logo" />
         </a>

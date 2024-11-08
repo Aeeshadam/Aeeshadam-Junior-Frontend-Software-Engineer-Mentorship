@@ -1,8 +1,8 @@
 import React from "react";
-import Footer from "./Footer/Footer";
-import Services from "./Services/Services";
-import Hero from "./Hero/Hero";
-import Navbar from "./Navbar/Navbar";
+import Footer from "./Footer";
+import Services from "./Services";
+import Hero from "./Hero";
+import Navbar from "./Navbar";
 
 const Home = () => {
   return (
