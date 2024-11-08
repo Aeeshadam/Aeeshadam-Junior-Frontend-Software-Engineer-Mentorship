@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style.module.css";
-import { links } from "../../constants";
+import { navLinks } from "../../constants";
 
 const Navbar = () => {
   return (
@@ -11,7 +11,7 @@ const Navbar = () => {
         </a>
       </div>
       <ul className={styles.navLinks}>
-        {links.map((link) => (
+        {navLinks?.map((link) => (
           <li key={link.href}>
             <a href={link.href}>{link.text}</a>
           </li>
