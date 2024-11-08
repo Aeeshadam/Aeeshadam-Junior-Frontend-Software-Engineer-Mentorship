@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style.module.css";
-import { footerLinks } from "../constants";
+import { footerLinks } from "../../constants";
 
 const Footer = () => {
   return (

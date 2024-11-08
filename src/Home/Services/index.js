@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style.module.css";
-import { serviceData } from "../constants";
+import { serviceData } from "../../constants";
 
 const Services = () => {
   return (

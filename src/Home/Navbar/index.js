@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style.module.css";
-import { links } from "../constants";
+import { links } from "../../constants";
 
 const Navbar = () => {
   return (
