@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import styles from "./style.module.css";
-import { links } from "../../constants";
+import { navLinks } from "../../constants";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuClick = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prevState) => !prevState);
   };
 
   const handleLinkClick = () => {
@@ -19,13 +19,13 @@ const Navbar = () => {
         <a className={styles.logo} href="/" aria-label="Logo">
           <img src="/logo.png" alt="Logo" />
         </a>
-        <div
+        <button
           className={styles.menu}
           onClick={handleMenuClick}
           aria-label="Menu Toggle"
         >
           <img src="/menu.svg" alt="Menu-icon" />
-        </div>
+        </button>
       </div>
       <ul
         className={`${styles.navLinks} ${
@@ -33,13 +33,15 @@ const Navbar = () => {
         }`}
         role="menu"
       >
-        {links.map((link) => (
-          <li key={link.href} role="menuitem">
-            <a href={link.href} onClick={handleLinkClick}>
-              {link.text}
-            </a>
-          </li>
-        ))}
+        {Array.isArray(navLinks) &&
+          navLinks.length > 0 &&
+          navLinks.map((link) => (
+            <li key={link.id} role="menuitem">
+              <a href={link.href} onClick={handleLinkClick}>
+                {link.text}
+              </a>
+            </li>
+          ))}
       </ul>
     </nav>
   );

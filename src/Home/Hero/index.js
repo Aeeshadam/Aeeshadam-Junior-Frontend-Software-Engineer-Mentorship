@@ -12,9 +12,9 @@ const Hero = () => {
           at aperiam nesciunt, beatae voluptatem laudantium eveniet odit fuga
           earum tenetur ad?
         </p>
-        <button>
-          <a href="/about">Learn More</a>
-        </button>
+        <a className={styles.button} href="/about">
+          Learn More
+        </a>
       </header>
       <figure>
         <img className={styles.heroImage} src="/hero.jpg" alt="hero-image" />
