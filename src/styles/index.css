@@ -1,12 +1,5 @@
-:root {
-  --grey-color: rgb(58, 58, 58);
-  --primary-color: rgb(91, 2, 2);
-  --secondary-color: rgb(19, 19, 19);
-  --border-color: rgb(220, 220, 220);
-  --spacing-1: 2rem;
-  --spacing-3: 6rem;
-  --spacing-5: 10rem;
-}
+@import "../styles/variables/utils.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +23,7 @@ h1 {
   font-weight: 700;
   color: var(--primary-color);
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-1);
 
   @media (max-width: 1024px) {
     font-size: 4rem;
@@ -44,7 +37,7 @@ h2 {
   font-size: 3.5rem;
   font-weight: 500;
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-1);
 
   @media (max-width: 1024px) {
     font-size: 3rem;
@@ -61,15 +54,15 @@ a {
 }
 
 .container {
-  padding: 0 var(--spacing-5);
+  padding: 0 var(--spacing-10);
   margin: 0 auto;
   max-width: 1440px;
 
   @media (max-width: 1024px) {
-    padding: 0 var(--spacing-3);
+    padding: 0 var(-spacing-6);
   }
 
   @media (max-width: 768px) {
-    padding: 0 var(--spacing-1);
+    padding: 0 var(--spacing-2);
   }
 }
